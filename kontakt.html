@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <title>Anwaltskanzlei Weber</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <a href="index.html" id="logo">
+                    <img src="AnwaltskanzleitWeber_logo.png" alt="Logo.jpg" width="300" id="logoIco" />
+                </a>
+            </div>
+
+            <div class="col-sm-2">
+                <p>Brassertstrasse 94</p>
+                <p>45768  Marl</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="einleitung.html">Einleitung</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="kanzlei.html">Kanzlei</a></li>
+                <li><a href="kontakt.html">Empfang</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="hinweise.html">AGB</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Kontaktformular</h3>
+                <form role="form" id="frmContact">
+                    <div class="col-md-4">
+                        <div class="form-group" id="frmGrpVorname">
+                            <label for="vorname" class="control-label">Vorname</label>
+                            <input type="text" id="vorname" class="form-control" placeholder="Ihr Vorname">
+                        </div>
+                        <div class="form-group" id="frmGrpNachname">
+                            <label for="nachname" class="control-label">Nachname</label>
+                            <input type="text" id="nachname" class="form-control" placeholder="Ihr Nachname">
+                        </div>
+                        <div class="form-group" id="frmGrpEmail">
+                            <label for="email" class="control-label">E-Mail Adresse</label>
+                            <input type="text" id="email" class="form-control" placeholder="Ihre E-Mail Adresse">
+                        </div>
+                        <div class="form-group" id="frmGrpCaptcha">
+                            <label for="captcha" class="control-label">Wie viel ist "2 + 3"?</label>
+                            <input type="text" id="captcha" class="form-control" placeholder="Ergebnis der o.g. Rechenaufgabe">
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="submit" id="submitBtn" class="btn btn-primary btn-lg" >Absenden</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group" id="frmGrpNachricht">
+                            <label for="nachricht" class="control-label">Nachricht</label>
+                            <textarea id="nachricht" class="form-control" placeholder="Ihre Nachricht an uns..."></textarea>
+                        </div>
+                        
+
+                        
+                    </div>
+</form>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Öffnungszeiten:</h3>
+                <p>Montag - Freitag: 9-13 Uhr; 15-18 Uhr</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Telefon:</h3>
+                <p>02365 - 50 50 60</p>
+            </div>
+    </div>
+</body>
+</html>

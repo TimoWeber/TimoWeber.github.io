@@ -1,0 +1,38 @@
+﻿TO DO:
+======
+5. Galerie beim Klick	
+6. Kontakt-Seite erarbeiten/löschen
+7. Einfügen:
+	+Kopernikus
+	-TF2 Short
+	-2D Panda Jessy
+	-LMTD Webseite
+	-Z-Brush Kopf
+	
+	+Urlaub auf Texel
+	
+8. Menüleiste
+9. Benutzte Programme / Sprachen als Icons Darstellen
+10. Farbe!
+
+
+DONE:
+=====
+1. Chameleon
+	-Index: Titel & Beschreibung
+	-Eigene Seite: Titel & Progress-Bild-Beschreibung
+
+2. Stemao
+	-e. Seite: Logobeschreibung
+
+3. Dawn of Doom
+	-Kugeln mit Textur vom Holzwand und Metall vom Container
+	-Motel runter damit Pfeiler nicht schweben
+	
+4. Knoworld
+	-Beschreibung
+	-Bildbeschreibungen
+
+5. Logos:
+	+Logos auf Mainpage
+	+INFX Ueberschrift
