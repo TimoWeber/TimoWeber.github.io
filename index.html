@@ -6,10 +6,12 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="img/TimoWLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom.css"></script>
 
 
     <title>Timo Weber</title>
@@ -25,168 +27,249 @@
             </div>
         </div>
 
-        <!-- Navbar -->
-        <div class="row">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="index.html">Alle</a></li>
-                <li><a href="dd.html">3D Arbeiten</a></li>
-                <li><a href="zd.html">2D Arbeiten</a></li>
-                <li><a href="logos.html">Logos</a></li>
-                <li><a href="vid.html">Video</a></li>
+
+
+
+        <!-- navigation bar -->
+        <nav class="navbar navbar-dark bg-inverse top15">
+          <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item text-warning active"><a class="nav-link" href="index.html">Alle</a></li>
+              <li class="nav-item"><a class="nav-link" href="dd.html">3D Arbeiten</a></li>
+              <li class="nav-item"><a class="nav-link" href="zd.html">2D Arbeiten</a></li>
+              <li class="nav-item"><a class="nav-link" href="logos.html">Logos</a></li>
+              <li class="nav-item"><a class="nav-link" href="vid.html">Video</a></li>
             </ul>
+          </div>
+        </nav>
+
+        <!-- About Me -->
+        <div class="row top15">
+          <h2 class="text-xs-center text-white">About Me</h2>
+        </div>
+        <div class="row top15">
+          <div class="col-md-9">
+            <div class="background-white rounded">
+              <p>Hey, ich bin Timo!</p>
+              <p>Aktuell bin ich Student in Fulda, stamme aber aus dem Ruhrgebiet und liebe kreative Arbeit. Ich sammle Erfahrung in vielen verschiedenen Bereichen. Egal ob Logos, Graphik Design, Fotos,  Film, 3D oder klassische Kunst. Ich versuche immer neues und lerne dabei verschiedene Techniken und Programme kennen.</p>
+              <p>Ich fühle mich mit den typischen Adobe Programmen, wie z.B. Illustrator, Photoshop, Indesign, wohl zu arbeiten und bringe einige Erfahrung mit Wordpress, Bootstrap, sowie JavaScript und CSS mit. </p>
+            </div>
+          </div>
+        <div class="col-md-3">
+          <img src="img/portrait.png" alt="Portrait" class="img-responsive img-sm img-md" />
+        </div>
+      </div>
+
+        <hr />
+
+        <!-- CONTENT -->
+        <div class="row top15">
+          <h2 class="text-xs-center text-white">Projekte</h2>
+        </div>
+        <div class="row top15">
+        <!-- Chamaeleon -->
+        <div class="col-md-4">
+          <div class="card">
+            <a href="chameleon.html">
+              <img class="card-img-top img-responsive" src="img/chamaeleon_thumbnail.png" alt="Card image cap">
+            </a>
+            <div class="card-block">
+              <h4 class="card-title">Chamäleon - 2D Design</h4>
+              <p class="card-text">Ein Chamäleon als digitale Illustration im Stil von <a href="http://www.dan-mumford.com/">Dan Mumford</a>. Genutzt habe ich ein Grafiktablet und Photoshop.</p>
+              <div class="row">
+                <a href="chameleon.html" class="btn btn-accent">Details</a>
+                <a href="#" class="btn btn-zd disabled float-xs-right" role="button" aria-disabled="true">2D</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Chamaeleon Design -->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                        <a href='chameleon.html' ;"><img src="img/chamaeleon_thumbnail.png" alt="Chameleon Logo" class="img-responsive center-block" /></a>
-                </div>
-            </div>
-            <!-- Description -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Chamäleon - 2D Designs</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Ein digitales Bild, das ich gemalt habe, um einen Stil ähnlich dem von <a href="http://www.dan-mumford.com/">Dan Mumford</a> zu erreichen.</p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'chameleon.html';">Details</button>
-                </div>
-            </div>
-        <hr />
-
         <!-- Bildessay -->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <a href='bildessay.html' ;"><img src="img/bildessay_thumbnail_2.png" alt="Bildessay_Thumbnail" class="img-responsive center-block" /></a>
+        <div class="col-md-4">
+            <div class="card">
+              <a href="bildessay.html">
+                <img class="card-img-top img-responsive" src="img/bildessay_thumbnail.png" alt="steamo-logo" />
+              </a>
+                <div class="card-block">
+                    <h4 class="card-title">Bildessay - Urlaub auf Texel</h4>
+                    <p class="card-text">Bei diesem Bildessay handelt es sich um eine 16 Seite Erzählung über die kleine Niederländische 'Texel'.</p>
+                    <div class="row">
+                      <a href="bildessay.html" class="btn btn-accent">Details</a>
+                      <a href="#" class="btn btn-zd disabled float-xs-right" role="button" aria-disabled="true">2D</a>
+                    </div>
                 </div>
             </div>
-            <!-- Description -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Bildessay - Urlaub auf Texel</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <p>An diesem Projekt arbeite ich aktuell noch. Es wird ein kleines Magazin von ca. 14-18 Seiten, in dem ich in einer Bildserie ein bisschen über die kleine niederländische Insel Texel erzähle.</p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'bildessay.html';">Details</button>
-                </div>
-            </div>
-        <hr />
+        </div>
 
-        <!-- Twitch Design -->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <a href='steamo.html' ;"><img src="img/steamotv_thumbnail.png" alt="SteamoTV Logo" class="img-responsive center-block" /></a>
+        <!-- Steamo -->
+        <div class="col-md-4">
+            <div class="card">
+              <a href="steamo.html">
+                <img class="card-img-top img-responsive" src="img/steamotv_thumbnail.png" alt="steamo-logo" />
+              </a>
+              <div class="card-block">
+                    <h4 class="card-title">Twitch.tv: SteamoTV</h4>
+                    <p class="card-text">Während meines ca. einjährigem täglichem Streamen auf TWITCH.TV habe ich mein eigenes Logo, Stream Design etc. gestaltet.</p>
+                    <div class="row">
+                      <a href="steamo.html" class="btn btn-accent">Details</a>
+                      <a href="#" class="btn btn-zd disabled float-xs-right" role="button" aria-disabled="true">2D</a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Description -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Twitch: SteamoTV - 2D Designs</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Während meines ca. einjährigem täglichem Streamen auf <a href="twitch.tv/steamotv">twitch.tv</a> habe ich mein eigenes Logo, Stream Design etc. gestaltet.</p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'steamo.html';">Details</button>
-                </div>
-            </div>
-            <hr />
 
-        <!-- Dawn of Doom -->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <a href="dawnofdoom.html"><img src="img/dawnofdoom_thumbnail.jpg" alt="DawnOfDoom1" class="img-responsive center-block" /></a>
-                </div>
-            </div>
 
-            <!-- Description -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <h3>Dawn of Doom - 3D Animations Shortfilm</h3>
-                    <p>In einem Monat haben Mathias Glab und ich gemeinsam an diesem kurzen Animationsvideo gearbeitet. In diesem Monat haben wir alle Models modelliert, texturiert und animiert, so wie die Szenen und die Kamerafahrten erstellt. Außerdem wurde das gesamte Video in dieser Zeit gerendert und geschnitten!</p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'dawnofdoom.html';">Details</button>
-                </div>
-            </div>
-            <hr />
 
-        <!-- Knoworld-->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <a href='knoworld.html';"><img src="img/knoworld_thumbnail.png" alt="KnoworldTitle" class="img-responsive center-block" /></a>
-                </div>
-            </div>
-            <!-- Description -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <h3>Knoworld - 3D Lernspiel</h3>
-                    <p>Knoworld war ein Projekt von 9 Studenten im Rahmen eines Hochschulfachs, bei dem wir über 2 Semester in Eigenverantwortung ein Lernspiel erarbeitet haben. Dieses Lernspiel
-                    kann mit einem vom Spieler selbst erstellten Fragenkatalog gespielt werden. Ich habe für dieses Projekt verschiedene 3D-Objekte erstellt, texturiert und das server-sided Highscore System programmiert.</p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'knoworld.html';">Details</button>
-                </div>
-            </div>
-        <hr />
+    <div class="row top15">
+    <!-- Dawn of Doom -->
+    <div class="col-md-4">
+      <div class="card">
+        <a href="dawnofdoom.html">
+        <img class="card-img-top img-responsive" src="img/dawnofdoom_thumbnail.jpg" alt="Card image cap">
+        </a>
+        <div class="card-block">
+          <h4 class="card-title">3D-Animations-Kurzfilm</h4>
+          <p class="card-text">Mathias Glab und ich haben gemeinsam an diesem Video gearbeitet. In einem Monat entstand die Idee und die gesamte Umsetzung wurde durchgeführt.</p>
+          <div class="row">
+            <a href="dawnofdoom.html" class="btn btn-accent">Details</a>
+            <a href="#" class="btn btn-dd disabled float-xs-right" role="button" aria-disabled="true">3D</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Logos -->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <a href='logos.html' ;"><img src="img/logos_thumbnail.png" alt="Bildessay_Thumbnail" class="img-responsive center-block" /></a>
+    <!-- Knowworld -->
+    <div class="col-md-4">
+        <div class="card">
+          <a href="knoworld.html">
+            <img class="card-img-top img-responsive" src="img/knoworld_thumbnail.jpg" alt="steamo-logo" />
+            </a>
+            <div class="card-block">
+                <h4 class="card-title">3D Lernspiel</h4>
+                <p class="card-text">Knoworld war ein Projekt von 9 Studenten im Rahmen eines Hochschulfachs, bei dem wir über 2 Semester in Eigenverantwortung ein Lernspiel erstellt haben.</p>
+                <div class="row">
+                  <a href="knoworld.html" class="btn btn-accent">Details</a>
+                  <a href="#" class="btn btn-dd disabled float-xs-right" role="button" aria-disabled="true">3D</a>
                 </div>
             </div>
-            <!-- Description -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Logos</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Mitlerweile habe ich ein paar Logos für Bekannte und mich gestaltet. </p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'logos.html';">Details</button>
-                </div>
-            </div>
-        <hr />
+        </div>
+    </div>
 
-        <!-- Kopernikus -->
-            <!-- Image -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <a href='kopernikus.html' ;"><img src="img/kopernikus.jpg" alt="KnoworldTitle" class="img-responsive center-block" /></a>
+    <!-- Kopernikus -->
+    <div class="col-md-4">
+        <div class="card">
+          <a href="kopernikus.html">
+            <img class="card-img-top img-responsive" src="img/kopernikus.jpg" alt="steamo-logo" />
+          </a>
+          <div class="card-block">
+                <h4 class="card-title">Video-Satire</h4>
+                <p class="card-text">In diesem Satirevideo habe ich zusammen mit einigen Komilitonen einen kurzen Bericht erstellt, der vom Aufbau sehr nah an die Pro7-Sendung Galileo angelehnt ist.</p>
+                <div class="row">
+                  <a href="kopernikus.html" class="btn btn-accent">Details</a>
+                  <a href="#" class="btn btn-vid disabled float-xs-right" role="button" aria-disabled="true">Video</a>
                 </div>
             </div>
-            <!-- Description -->
-            <div class="row top15">
-                <div class="col-md-12">
-                    <h3>Kopernikus - Video-Satire</h3>
-                    <p>
-                        Kopernikus ist ein Projekt für ein Hochschulfach gewesen, bei dem wir ein kurzes Video erstellen mussten. In diesem Video mussten wir einen Teil im hochschuleigenen TV-Studio filmen und für den anderen Teil Außenaufnahmen machen.
-                    </p>
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'kopernikus.html';">Details</button>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+
+<!-- Logos -->
+
+<div class="row top 15">
+  <h2 class="text-xs-center text-white">Logo-Designs</h2>
+</div>
+
+<div class="row top15">
+    <!-- SteamoTV -->
+    <div class="col-md-4">
+        <div class="card">
+            <a href="#" class="pop">
+                <img class="card-img-top pop img-responsive mx-auto d-block" src="img/cards/steamo.png" alt="steamo-logo" />
+                </a>
+                <div class="card-block">
+                    <h4 class="card-title">SteamoTV</h4>
+                    <p class="card-text">Das SteamoTV Logo für meine Accounts bei Twitch, Twitter und Youtube.</p>
                 </div>
+        </div>
+    </div>
+
+    <!-- Briefe an dich -->
+    <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top img-responsive mx-auto d-block" src="img/cards/briefe_an_dich_loop.gif" alt="steamo-logo" />
+            <div class="card-block">
+                <h4 class="card-title">Briefe an dich</h4>
+                <p class="card-text">Diese Logo-Animation habe ich für ein <a href="https://www.instagram.com/p/BFJ2DQXnoAg/?taken-by=briefeandich">Kurzvideo</a> des Web-Blogs meiner Mutter <a href="http://www.briefe-an-dich.de/">Briefe-an-dich.de</a> erstellt.</p>
             </div>
+        </div>
+    </div>
+
+    <!-- Personal Logo -->
+    <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top img-responsive mx-auto d-block" src="img/cards/timoweber.jpg" alt="steamo-logo" />
+            <div class="card-block">
+                <h4 class="card-title">Timo Weber</h4>
+                <p class="card-text">Mein eigenes Logo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row top30">
+
+    <!-- INFN -->
+    <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top img-rounded img-responsive mx-auto d-block" src="img/cards/infn.jpg" alt="steamo-logo" />
+            <div class="card-block">
+                <h4 class="card-title">INFN - Infusion</h4>
+                <p class="card-text">Das Infusion Logo habe ich für die Gilde gestaltet, in der ich in der Zeit meiner Streams Mitglied war.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFX -->
+    <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top img-rounded img-responsive" src="img/cards/infx.jpg" alt="steamo-logo" />
+            <div class="card-block">
+                <h4 class="card-title">INFX - Infusion X</h4>
+                <p class="card-text">Dieses Logo habe ich zur selben Zeit wie das Infusion Logo gestaltet. Es ist für das erste der zwei Infusion Teams.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFY -->
+    <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top img-rounded img-responsive" src="img/cards/infy.jpg" alt="steamo-logo" />
+            <div class="card-block">
+                <h4 class="card-title">INFY - Infusion Y</h4>
+                <p class="card-text">Dies ist das Logo für das zweite Infusion Team.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Footer -->
-        <footer class="nav-default">
+        <footer class="nav-default text-white">
             <hr />
             <div class="row">
                 <div class="col-md-4">
-                    <p class="">timo.weber93 (at) gmail.com</p>
+                    <p class="text-md-left text-sm-center">timo.weber93 (at) gmail.com</p>
                 </div>
-                <!--<div class="col-md-4">
-                    <p class="text-center">&copy;2016 Timo Weber</p>
-                </div>-->
-                <div class="col-md-4 col-md-offset-4">
-                    <p class="text-right">&copy;2016 Timo Weber</p>
+                <div class="col-md-4 offset-md-4">
+                    <p class="text-md-right text-sm-center">&copy;2016 Timo Weber</p>
                 </div>
             </div>
         </footer>

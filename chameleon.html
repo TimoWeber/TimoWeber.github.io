@@ -6,104 +6,131 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="img/TimoWLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom.css"></script>
 
 
     <title>Timo Weber</title>
 </head>
-<body onclick="checkDisplayOpt()">
+<body>
     <div class="container">
         <div class="row top15">
             <div class="col-md-12">
                 <a href="index.html" id="logo">
-                    <img class="img-responsive center-block" src="img/TimoWeberLogo.png" alt="Logo.jpg" id="logoIco" />
+                    <img class="img-responsive mx-auto d-block" src="img/TimoWeberLogo.png" alt="Logo.jpg" id="logoIco" />
                 </a>
             </div>
         </div>
 
-        <!-- Navbar -->
-        <div class="row">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="index.html">Alle</a></li>
-                <li><a href="dd.html">3D Arbeiten</a></li>
-                <li><a href="zd.html">2D Arbeiten</a></li>
-                <li><a href="logos.html">Logos</a></li>
-                <li><a href="vid.html">Video</a></li>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-dark bg-inverse top15">
+          <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item text-warning"><a class="nav-link" href="index.html">Alle</a></li>
+              <li class="nav-item"><a class="nav-link" href="dd.html">3D Arbeiten</a></li>
+              <li class="nav-item"><a class="nav-link" href="zd.html">2D Arbeiten</a></li>
+              <li class="nav-item"><a class="nav-link" href="logos.html">Logos</a></li>
+              <li class="nav-item"><a class="nav-link" href="vid.html">Video</a></li>
             </ul>
-        </div>
+          </div>
+        </nav>
 
         <!-- Chamäleon -->
             <!-- Image -->
             <div class="row top15">
                 <div class="col-md-12">
                     <figure class="figure">
-                        <img src="img/chameleon.jpg" alt="Chamaeleon Logo" class="img-responsive center-block" />
+                        <img src="img/chamaeleon-thumbnail-2.jpg" alt="Chamaeleon Logo" class="img-responsive mx-auto d-block" />
                     </figure>
                 </div>
             </div>
 
+
             <!-- Description -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Chamäleon - 2D Designs</h3>
-                </div>
-            </div>
-            <div class="row zd alle">
+            <div class="row top15">
+              <div class="col-md-12">
+                <div class="background-white rounded no-padding">
                 <div class="col-md-8">
+                    <h3>Chamäleon - 2D Designs</h3>
                     <p>Ein digitales Bild, das ich gemalt habe, um einen Stil ähnlich dem von <a href="http://www.dan-mumford.com/">Dan Mumford</a> zu erreichen.</p>
                 </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <p>Genutzte Programme: </p>
-                        </div>
-                        <div class="row">
-                            <img src="img/programme/photoshop.png" alt="photoshop" />
-                        </div>
-                    </div>
-
+                <div class="col-md-4">
+                  <div class="row">
+                    <p>Genutzte Programme: </p>
+                  </div>
+                  <div class="row">
+                    <img src="img/programme/photoshop.png" alt="photoshop" />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+            <hr />
+
+
+            <!-- FINAL -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-white text-xs-center">Final</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <img src="img/chameleon-lowres.jpg" alt="Chamäleon" class="img-responsive mx-auto d-block" />
+              </div>
+            </div>
+
             <hr />
 
         <!-- In Progress -->
-        <div class="row top15">
-            <div class="col-md-12">
-                <figure class="figure">
-                    <img src="img/Screenshot_87.png" alt="Chamäleon Logo" class="img-responsive center-block" />
-                    <figcaption class="figure-caption">Progress 1</figcaption>
-                </figure>
-                <p>Zu Beginn habe ich zunächst versucht einen Stil zu finden, der mir gefällt. Dadurch, dass alle Ebenen einen "Color-Overlay"-Effekt haben, konnte ich die Farben auch später noch ohne Probleme verändern.</p>
-            </div>
-        </div>
-
-        <div class="row top15">
-            <div class="col-md-12">
-                <figure class="figure">
-                    <img src="img/Screenshot_88.png" alt="Chamäleon Logo" class="img-responsive center-block" />
-                    <figcaption class="figure-caption">Progress 2</figcaption>
-                </figure>
-                <p>Eigentlich habe ich versucht mit nur drei Farben zu arbeiten, habe mich dann aber dagegen entschieden, damit das Chamäleon sich wirklich gut vom Hintergrund abhebt.</p>
-            </div>
-        </div>
-
-
-
-    <!-- Footer -->
-    <footer class="nav-default">
-        <hr />
         <div class="row">
-            <div class="col-md-4">
-                <p class="">timo.weber93 (at) gmail.com</p>
-            </div>
-            <!--<div class="col-md-4">
-                <p class="text-center">&copy;2016 Timo Weber</p>
-            </div>-->
-            <div class="col-md-4 col-md-offset-4">
-                <p class="text-right">&copy;2016 Timo Weber</p>
+            <div class="col-md-12">
+                <h3 class="text-white text-xs-center">Progress Images</h3>
             </div>
         </div>
-    </footer>
-</body>
-</html>
+        <div class="row top15">
+            <div class="col-md-12">
+              <img src="img/Screenshot_87.png" alt="Chamäleon Logo" class="img-responsive mx-auto d-block" />
+              <div class="background-white rounded top5">
+                <p>Progress 1</p>
+                <p>Zu Beginn habe ich zunächst versucht einen Stil zu finden, der mir gefällt. Dadurch, dass alle Ebenen einen "Color-Overlay"-Effekt haben, konnte ich die Farben auch später noch ohne Probleme verändern.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="row top15">
+            <div class="col-md-12">
+                <img src="img/Screenshot_88.png" alt="Chamäleon Logo" class="img-responsive mx-auto d-block" />
+              <div class="background-white rounded top5">
+                <p>Progress 2</p>
+                <p>Eigentlich habe ich versucht mit nur drei Farben zu arbeiten, habe mich dann aber dagegen entschieden, damit das Chamäleon sich wirklich gut vom Hintergrund abhebt.</p>
+              </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="nav-default text-white">
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="text-md-left text-sm-center">timo.weber93 (at) gmail.com</p>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                    <p class="text-md-right text-sm-center">&copy;2016 Timo Weber</p>
+                </div>
+            </div>
+        </footer>
+
+
+        </div>
+        </body>
+        </html>
