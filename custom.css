@@ -87,10 +87,10 @@ body {
   .img-md {
     width: 66.66%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto; } }
+.bottom15 {
+  margin-bottom: 15px; }
 
-  .bottom15 {
-    margin-bottom: 15px; } }
 .active {
   color: #FF7043 !important; }
 
