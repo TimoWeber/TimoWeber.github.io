@@ -1,9 +1,14 @@
 /* Hintergrund Farbe */
-$hintergrundFarbe: #90A4AE
-$menueLeiste: #455A64
+$hintergrundFarbe: #eeeeee /* alte Farbe: 90A4AE  */
+$menueLeiste: #6d6d6d /* alte Farbe: 455A64 */
+
+
+/* Gradient */
+$gradient1: #43cea2
+$gradient2: #185a9d
 
 /* Accent Farbe */
-$accent: #FF7043
+$accent: #03a9f4 /* FF7043 */
 
 /* 2D Farbe */
 $zweiD: #B71C1C
@@ -39,8 +44,27 @@ $video: #BF360C
   max-width: 100%
   height: auto
 
+.content-wrap
+  background: $hintergrundFarbe
+  padding-left: 1%
+  padding-right: 1%
+  border-radius: .3%
+  padding-bottom: 15px
+
+.rotate-img
+  transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
+  -webkit-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
+
 body
-  background-color: $hintergrundFarbe
+  /* background-color: $hintergrundFarbe */
+  background: $gradient1 /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $gradient1, $gradient2) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $gradient1, $gradient2) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $gradient1, $gradient2) /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $gradient1, $gradient2) /* Standard syntax */
 
 .navbar .navbar-dark .bg-inverse .nav
   background-color: $menueLeiste !important
@@ -161,3 +185,169 @@ a:focus, a:hover
 
 .no-padding
   padding: 0
+
+//carousel
+.carousel-control-next, .carousel-control-prev,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control-next-icon, .carousel-control-prev-icon,
+  position: absolute
+  top: 40%
+  z-index: 5
+  display: inline-block
+  margin-right: -15px
+  margin-left: -15px
+  font-size: 2em
+  color: white
+
+.carousel-control-next
+  right: 35px
+
+.carousel-control-prev
+  left: 35px
+
+
+/* Fotogallery
+.container.gallery-container
+  background-color: #fff
+  color: #35373a
+  min-height: 100vh
+  padding: 0px 20 px
+
+.gallery-container h1
+  text-align: center
+  margin-top: 50px
+  font-family: 'Droid Sans', sans-serif
+  font-weight: bold
+
+.gallery-container p.page-description
+  text-align: center
+  margin: 25px auto
+  font-size: 18px
+  color: #999
+
+/*.tz-gallery
+  padding: 40px
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div
+  padding: 2px
+
+.tz-gallery .lightbox img
+  width: 100%
+  height: 80%
+  border-radius: 5px
+  position: relative
+  overflow: hidden
+
+.tz-gallery .lightbox:before
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -13px
+  margin-left: -13px
+  opacity: 0
+  color: #fff
+  font-size: 26px
+  font-family: 'FontAwesome'
+  content: '\f002'
+  pointer-events: none
+  z-index: 9000
+  transition: 0.4s
+
+
+
+.tz-gallery .lightbox:after
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  content: ''
+  background-color: $accent
+  transition: 0.4s
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before
+  opacity: 0.8
+
+.baguetteBox-button
+  background-color: transparent !important
+
+@media(max-width: 768px)
+  body
+    padding: 0
+
+
+/* back to top */
+.back-to-top
+  cursor: pointer
+  position: fixed
+  bottom: 20px
+  right: 20px
+  display: none
+  background-color: $accent
+
+/* Skill Bars */
+.skillbar
+  position: relative
+  display: block
+  margin-bottom: 15px
+  width: 100%
+  background: #fff
+  height: 25px
+  border-radius: 3px
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  -webkit-transition: 0.4s linear
+  -moz-transition: 0.4s linear
+  -ms-transition: 0.4s linear
+  -o-transition: 0.4s linear
+  transition: 0.4s linear
+  -webkit-transition-property: width, background-color
+  -moz-transition-property: width, background-color
+  -ms-transition-property: width, background-color
+  -o-transition-property: width, background-color
+  transition-property: width, background-color
+
+
+.skillbar-title
+  position: absolute
+  top: 0
+  left: 0
+  padding-left: 7px
+  width: 110px
+  line-height: 25px
+  font-weight: bold
+  font-size: 13px
+  color: #ffffff
+  background: #6adcfa
+  -webkit-border-top-left-radius: 3px
+  -webkit-border-bottom-left-radius: 4px
+  -moz-border-radius-topleft: 3px
+  -moz-border-radius-bottomleft: 3px
+  border-top-left-radius: 3px
+  border-bottom-left-radius: 3px
+
+.skillbar-bar
+  height: 25px
+  //damit anomation direkt an der Kante anfängt
+  width: 110px
+  background: #6adcfa
+  border-radius: 3px
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+
+.skill-bar-percent
+  position: absolute
+  right: 10px
+  top: 0
+  font-size: 11px
+  height: 25px
+  line-height: 25px
+  color: #ffffff
+  color: rgba(0, 0, 0, 0.4)
+
+
+  .illustrator
+    color: #ff7c00 !important
